@@ -22,7 +22,7 @@ async def generate_image_with_prompt(prompt, output_dir, auth_cookie="1nVIOdWy-B
         try:
             async with ImageGenAsync(auth_cookie, debug_file=debug_file, quiet=quiet, all_cookies=all_cookies) as image_generator:
                 images = await image_generator.get_images(prompt)
-                await image_generator.save_images(images, output_dir=output_dir, download_count=1)
+                await image_generator.save_images(images, output_dir=output_dir, download_count=3)
             print("Image generation completed successfully.")
             break
         except Exception as e:
