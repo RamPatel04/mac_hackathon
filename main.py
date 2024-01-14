@@ -1,6 +1,7 @@
 import os
+import asyncio
 from story_generation import alternateStoryGen
-from image_generation import run_bing_image_creator
+from image_generation import generate_image_with_prompt
 
 # create python function
 def main():
@@ -9,7 +10,7 @@ def main():
 
     # call image generation function
     this_directory = os.getcwd()
-    run_bing_image_creator(user_input, this_directory)
+    asyncio.run(generate_image_with_prompt(user_input, this_directory))
     # print outputG
     # print(output)
 
