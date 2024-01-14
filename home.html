@@ -1,101 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of website</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-        }
-        header {
-            background-color: transparent;
-        }
-        nav {
-            display: none; /* Hide the navigation for the home page */
-        }
-        section {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <h1>!</h1>
-            <p>dfksjgnsdjgd</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What if</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">WHAT IF?</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page">Services</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <section id="home">
-        <div class="container">
-            <p>blank</p>
+    <!-- Main Page -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Welcome to<span> Pick your ending</span></h1>
+        <p class="hero__description">You decide the ending</p>
+        <button class="main__btn"><a href="#">Start now</a></button>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
         </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>blank</h2>
-            <p>blank</p>
+        <div class="main__content">
+          <h1>What do we do?</h1>
+          <h2>We help businesses scale</h2>
+          <p>Schedule a call to learn more about our services</p>
+          <button class="main__btn"><a href="#">Schedule Call</a></button>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>blank</h2>
-            <div class="portfolio-item">
-                <img src="your-image1.jpg" alt="Project 1">
-                <h3>blank</h3>
-                <p>blank</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="your-image2.jpg" alt="Project 2">
-                <h3>blank</h3>
-                <p>blank</p>
-            </div>
-            <!-- Add more portfolio items as needed -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>blank</h2>
-            <form>
-                <label for="name">blank</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">blank</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">blank</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; blank</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+    
