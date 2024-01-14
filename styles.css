@@ -113,10 +113,6 @@
       transform: translate(5%, 20%);
     }
   
-    .navbar__toggle .bar {
-      display: block;
-      cursor: pointer;
-    }
   
     #mobile-menu.is-active .bar:nth-child(2) {
       opacity: 0;
