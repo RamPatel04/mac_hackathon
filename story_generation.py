@@ -41,8 +41,6 @@ def alternateStoryGen(movieTitle, userPrompts):
 
   )
 
-
-
   # Generate lyrics
   response = co.generate(
     model='command-light',

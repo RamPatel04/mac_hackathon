@@ -1,5 +1,5 @@
 import os
-# import re
+import re
 import asyncio
 from story_generation import alternateStoryGen, formatStory
 from image_generation import generate_image_with_prompt
@@ -13,15 +13,19 @@ def main():
 
     # call story generation function
     output = alternateStoryGen(movie, user_input)
+
+    # format output for readability for users on the UI
     formatted_output = formatStory(output)
 
-    # bullet_points = re.findall(r'\d+\.\s+"([^"]+)"', output)
-    # bullet_points_str = ' '.join(bullet_points)
+    # format output for the image generation
+    pattern = r'\d\..*?(?=\n\d\.|\n\n|$)'
+    matches = re.findall(pattern, output, re.DOTALL)
+    combined_string = '\n'.join(matches)
 
-    asyncio.run(generate_image_with_prompt(formatted_output, this_directory))
+    # call image generation function
+    asyncio.run(generate_image_with_prompt(combined_string, this_directory))
     # print outputG
     print(formatted_output)
-
 
 # call main function
 if __name__ == '__main__':
