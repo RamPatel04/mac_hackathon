@@ -1,0 +1,3 @@
+[submodule "BingImageCreator_modified"]
+	path = BingImageCreator_modified
+	url = https://github.com/acheong08/BingImageCreator.git
