@@ -23,6 +23,7 @@ def main():
     combined_string = '\n'.join(matches)
 
     # call image generation function
+    #asyncio.run(generate_image_with_prompt(combined_string, this_directory))
     asyncio.run(generate_image_with_prompt(combined_string, this_directory))
     # print outputG
     print(formatted_output)
