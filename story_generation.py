@@ -28,7 +28,8 @@ def alternateStoryGen(movieTitle, userPrompts):
   # Base prompt
   base_prompt = (
     f'Please pretend you are in the movie {movieTitle}. '
-    f'The writers of the movie were not happy with the way the plot was written, here is what they changed about the movie: {userPrompts}.'
+    #f'The writers of the movie were not happy with the way the plot was written, here is what they changed about the movie: {userPrompts}.'
+    f'The writers of the movie were not happy with the way the plot was written, the difference is that {userPrompts}.'
     'Describe to me 3 very specific scenes that happen in this new version of the movie occurring as a result of the change that the writers made.'
     'Do not mention the old version of the movie at all in your response. '
     'Do not talk about the film from an outside perspective, i.e you cannot use the film as a subject or an object because you do not know you are in a film.'

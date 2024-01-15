@@ -1,7 +1,6 @@
 from BingImageCreator_modified.src.BingImageCreator import ImageGenAsync
-import asyncio
 
-async def generate_image_with_prompt(prompt, output_dir, auth_cookie="1nVIOdWy-BFTw_krLqJjgKR6oj-Yp4SfzOvM4WVFjdMsEGpJrF-KM98PmUqP7wHO8UQ_3R5vaKzd_h43eLHGjmiwxiSlI3uogsQCTLMGP7azFceq_j2AGj3RWFdv6DGpiztwanEOuKnNxyr1lpINpflbvgWpYLuVJx5jqgsR_KRbthp8JaTLF4_SF1TiSWqMSYRAi_Ro1zinl5GaI77Uxb8QjwCmw3KkgP0C0LGE6dHA", debug_file=None, quiet=False, all_cookies=None):
+async def generate_image_with_prompt(prompt, output_dir, auth_cookie="1wxTlQu1wLV04PTjmwQ6tDf-5FHdpWjsiPnGA72SNk6-9_iXfLXnSP6zFqUcNHKBdxa5D8BO3-G-hsTLt3JCqgyfPMoV_IeHLbbEfwOvmbiIBtQEZkg0sZPjYe5OHM2AXKpV_hTAkcLacOzR-ThuUrn8shu2Bw8Vnd879nwQSlYfBmxXHQZ-BHWPuwbKnBQ11n0nGso3tuoQVblrQgAl4NfOovachlh4mL24Ff4Yyo34", debug_file=None, quiet=False, all_cookies=None):
     """
     Generate an image using Bing Image Creator with a given prompt.
 
@@ -16,7 +15,7 @@ async def generate_image_with_prompt(prompt, output_dir, auth_cookie="1nVIOdWy-B
     Returns:
     None: The image is saved in the specified output directory.
     """
-    max_attempts = 5
+    max_attempts = 3
     attempt = 0
     while attempt < max_attempts:
         try:
